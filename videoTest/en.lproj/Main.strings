@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Back"; ObjectID = "PCi-c4-oVb"; */
+"PCi-c4-oVb.text" = "Back";
+
+/* Class = "UIButton"; normalTitle = "Stop"; ObjectID = "Rsq-0d-nBa"; */
+"Rsq-0d-nBa.normalTitle" = "Stop";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "izd-Vc-NhA"; */
+"izd-Vc-NhA.normalTitle" = "Start";
+
+/* Class = "UILabel"; text = "Front"; ObjectID = "vHG-sH-QCR"; */
+"vHG-sH-QCR.text" = "Front";
