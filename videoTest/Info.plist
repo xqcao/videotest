@@ -47,5 +47,7 @@
 	<string>want use Microphone</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Want use photo libs</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>want use save</string>
 </dict>
 </plist>

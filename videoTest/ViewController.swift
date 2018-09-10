@@ -85,6 +85,7 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     @IBAction func doVideoStop(_ sender: Any) {
         print("record stoped")
         let output = session.outputs.first! as! AVCaptureMovieFileOutput
+        
         output.stopRecording()
     }
     
@@ -92,13 +93,8 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
 }
 
 extension ViewController: AVCaptureFileOutputRecordingDelegate {
-    func fileOutput(_ output: AVCaptureFileOutput,
-                    didFinishRecordingTo outputFileURL: URL,
-                    from connections: [AVCaptureConnection],
-                    error: Error?) {
-        // Handle output
-    }
-    func fileOutput(_ output: AVCaptureFileOutput, didStartRecordingTo outputFileURL: URL, from connections: [AVCaptureConnection], error: Error?) {
+    
+    func fileOutput(_ output: AVCaptureFileOutput, didFinishRecordingTo outputFileURL: URL, from connections: [AVCaptureConnection], error: Error?) {
         if UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(outputFileURL.path) {
             UISaveVideoAtPathToSavedPhotosAlbum(outputFileURL.path, self, #selector(completion(_:error:contextInfo:)), nil)
         }
